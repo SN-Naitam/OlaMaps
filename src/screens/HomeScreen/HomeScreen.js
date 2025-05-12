@@ -210,25 +210,7 @@ const styles = StyleSheet.create({
     height: 55,
     marginBottom: 40,
   },
-//   activateButton: {
-//   borderWidth:1,
-//     paddingVertical: 8,
-//     paddingHorizontal: 24,
-//     borderRadius: 5,
-//     alignItems: 'center',
-//     marginTop: 65,
-//     alignSelf: 'center',
-//     width:'80%',
-//     height:60,
-//     justifyContent:'center',
-//     borderColor:'#006241',
-//      shadowColor: '#006241', 
-//   // shadowOffset: { width: 0, height: 0 }, // No offset (glow around the button)
-//   shadowOpacity: 0.8,
-//   shadowRadius: 10, 
-//     elevation: 10, 
-//     backgroundColor: '#f4f5f7',  
-//  },
+
 
 activateButton: {
   paddingVertical: SCREEN_WIDTH < 350 ? 6 : 8,
