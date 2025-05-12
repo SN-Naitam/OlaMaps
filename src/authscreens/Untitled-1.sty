@@ -1,0 +1,52 @@
+   <View style={styles.card1}>
+                        <View style={styles.cardHeader} />
+                        <Text style={styles.headerText}>Health ONE - Membership </Text>
+                        <Text style={styles.headerText1}>Care for Your Parents, at every Step </Text>
+
+                        <View style={styles.cardBody}>
+                       <FlatList
+                ref={flatListRef}
+                data={imageData}
+                renderItem={renderItem}
+                keyExtractor={(item) => item.id}
+                horizontal
+                pagingEnabled
+                showsHorizontalScrollIndicator={false}
+                onScroll={handleScroll}
+                scrollEventThrottle={16}
+              /> 
+
+
+
+
+
+
+                        </View>
+                    </View>
+
+
+                    <View style={styles.servicesHeader}>
+                        <TouchableOpacity>
+                            <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Services</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity onPress={services}>
+                            <Text style={{ fontSize: 16, color: 'gray' }}>View More</Text>
+                        </TouchableOpacity>
+                    </View>
+
+
+                    <View style={styles.card2}>
+                        <FlatList
+                            data={newimageData}
+                            renderItem={newrenderItem}
+                            keyExtractor={(item) => item.id}
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            contentContainerStyle={{ paddingHorizontal: 10 }}
+
+                        />
+
+
+                    </View>
+
+                </View>
